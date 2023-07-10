@@ -1,7 +1,7 @@
 #nageshwalchtwar257@gmail.com/github
 node_name= str(input('enter the name of node/tank: '))
 tank_volume=float(input('Enter the total volume of the tank: '))
-Depth_tank= float(input('Enter the depth of tank: '))
+depth_tank= float(input('Enter the depth of tank: '))
 breadth_tank= float(input('Enter the breadth of tank: '))
 length_tank= float(input('Enter the length of tank: '))
 upper_limit= float(input('Enter the upper_limit of vol (cm): '))
@@ -18,7 +18,7 @@ tank_volume=tank_volume*1000
 print('Tank vol is: ',tank_volume)
 
 #converting all from meters to cm
-Depth_tank=Depth_tank*100
+depth_tank=Depth_tank*100
 breadth_tank=breadth_tank*100
 length_tank=length_tank*100
 

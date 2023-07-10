@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Tank Calculation</title>
+</head>
+<body>
+    <h1>Water Tank Calculation</h1>
+
+    <form action="/submit" method="POST">
+        <label for="node_name">Node/Tank Name:</label>
+        <input type="text" id="node_name" name="node_name" placeholder="Node/Tank Name"><br><br>
+
+        <label for="tank_volume">Total Volume of the Tank:</label>
+        <input type="number" id="tank_volume" name="tank_volume" placeholder="Total Volume of the Tank"><br><br>
+
+        <label for="depth_tank">Depth of Tank:</label>
+        <input type="number" id="depth_tank" name="depth_tank" placeholder="Depth of Tank"><br><br>
+
+        <label for="breadth_tank">Breadth of Tank:</label>
+        <input type="number" id="breadth_tank" name="breadth_tank" placeholder="Breadth of Tank"><br><br>
+
+        <label for="length_tank">Length of Tank:</label>
+        <input type="number" id="length_tank" name="length_tank" placeholder="Length of Tank"><br><br>
+
+        <label for="upper_limit">Upper Limit of Volume (cm):</label>
+        <input type="number" id="upper_limit" name="upper_limit" placeholder="Upper Limit of Volume (cm)"><br><br>
+
+        <label for="lower_limit">Lower Limit of Volume (cm):</label>
+        <input type="number" id="lower_limit" name="lower_limit" placeholder="Lower Limit of Volume (cm)"><br><br>
+
+        <label for="fill_time">Time for Fill:</label>
+        <input type="number" id="fill_time" name="fill_time" placeholder="Time for Fill"><br><br>
+
+        <label for="cons_time">Time for Consumption:</label>
+        <input type="number" id="cons_time" name="cons_time" placeholder="Time for Consumption"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Output:</h2>
+    <p>Connecting to node: {{ node_name }}</p>
+    <p>Connected, information is listed below</p>
+    <p>Change in water level: {{ change_water_level }}</p>
+    <p>Tank volume: {{ tank_volume }}</p>
+    <p>Volume of water: {{ vol_water }}</p>
+    <p>Fill rate: {{ fill_rate }}</p>
+    <p>Volume of water consumed: {{ vol_water_consumed }}</p>
+    <p>Consumption rate: {{ cons_rate }}</p>
+</body>
+</html>

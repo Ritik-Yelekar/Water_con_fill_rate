@@ -6,7 +6,7 @@ freezer = Freezer(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('./build/index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
